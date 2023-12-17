@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/img/logo.jpg">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+        <title>Portfolio | Brahim ABID</title>
+    </head>
+    <body>
+      
+<div class="count-particles">
+    <span class="js-count-particles">--</span> particles
+  </div>
+  
+  
+  <div id="particles-js"></div>
+  
+  
+  <script src="./assets/particles.js-master/particles.js"></script>
+  <script src="./assets/js/main.js"></script>
+  
+  
+  <script src="js/lib/stats.js"></script>
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script>
+
+
+       
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Brahim</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Accueil</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+                        <li class="nav__item"><a href="#work    " class="nav__link">Projets</a></li>
+                        <li class="nav__item"><a href="#hobbies" class="nav__link">Centres d'intérêts</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Brahim ABID<br>Concepteur <span class="home__title-color">Developpeur</span> de Nouvelles Technologies</h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/brahimabid/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/brahim922" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/dwwm.png" alt="">
+                </div>
+            </section>
+
+            
+            <section class="education section " id="about">
+                <h2 class="section-title">Diplômes / Formations</h2>
+                <div class="education__container bd-grid">
+                    <div class="education__content">
+                    <div>
+                    <h3 class="education__year">2022-2024</h3>
+                    <span class="education__university">ASTON-Ecole Informatique Paris Sud</span>
+                </div>
+
+                <div class="education_time">
+                    <span class="education__rounder"></span>
+                    <span class="education__line"></span>
+                </div>
+                <div>
+                    <h3 class="education__race">Titre Professionnel Bac +4</h3>
+                    <span class="education__university">Concepeur Développeur de Nouvelles Technologies</span>
+                </div>
+                <div>
+                    <h3 class="education__year">2020-2021</h3>
+                    <span class="education__university">Greta</span>
+                </div>
+
+                <div class="education_time">
+                    <span class="education__rounder"></span>
+                    <span class="education__line"></span>
+                </div>
+                <div>
+                    <h3 class="education__race">Titre Professionnel Bac+2</h3>
+                    <span class="education__university">Développement Full Stack</span>
+                </div>
+                 <div>
+                    <h3 class="education__year">2019</h3>
+                    <span class="education__university">Université Sorbonne Paris Nord</span>
+                </div>
+
+                <div class="education_time">
+                    <span class="education__rounder"></span>
+                    <span class="education__line"></span>
+                </div>
+                <div>
+                    <h3 class="education__race">Licence L1</h3>
+                    <span class="education__university">Sciences Pour L'ingénieur-Informatique</span>
+                </div>
+                <div>
+                    <h3 class="education__year">2018</h3>
+                    <span class="education__university">Lycée Galilée Gennevilliers</span>
+                </div>
+
+                <div class="education_time">
+                    <span class="education__rounder"></span>
+                    <span class="education__line"></span>
+                </div>
+                <div>
+                    <h3 class="education__race">Baccalauréat</h3>
+                    <span class="education__speciality">Scientifiques spécialité Physique-Chimie</span>
+                </div>
+    </div>
+    </div>
+         
+               
+            </section>
+
+            
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Compétences</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Langages Informatiques</h2>
+                        <p class="skills__text">Front-end</p>
+                        <div class="skills__data">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-angular skills__icon'></i>
+                                    <span class="skills__name">Angular</span>
+                                </div>
+                                <div class="skills__bar skills__js">
+    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">70%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-html5 skills__icon'></i>
+                                    <span class="skills__name">HTML5</span>
+                                </div>
+                                <div class="skills__bar skills__html">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon' ></i>
+                                    <span class="skills__name">JAVASCRIPT</span>
+                                </div>
+                                <div class="skills__bar skills__js">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">65%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxs-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
+                                <div class="skills__bar skills__css">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="skills__text">Back-end</p>
+                        <div class="skills__data">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='fab fa-php'></i>
+                                    <span class="skills__name">php</span>
+                                </div>
+                                <div class="skills__bar skills__php">
+    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">60%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+    
+                                        <img src="assets/img/mysql-logo.png" alt="">
+                                    </i>
+                                    <span class="skills__name">MySQL</span>
+                                </div>
+                                <div class="skills__bar skills__mysql">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">65%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxs-copyright' style='color:#2f83c9' ></i>
+                                    <span class="skills__name">Langage C</span>
+                                </div>
+                                <div class="skills__bar skills__c">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">55%</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <p class="skills__text">Frameworks</p>
+                        <div class="skills__data">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-bootstrap' style='color:#175dad' ></i>
+                                    <span class="skills__name">Bootsrap</span>
+                                </div>
+                                <div class="skills__bar skills__boot">
+    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">70%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+    
+                                    <i class='bx bxl-jquery' style='color:#175dad'></i>
+                                    <span class="skills__name">Jquery</span>
+                                </div>
+                                <div class="skills__bar skills__jq">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">60%</span>
+                                </div>
+                            </div>
+                            
+                    <div>              
+                        <img src="assets/img/.png" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="work section" id="work">
+                <h2 class="section-title">Projets</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/maquettage.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/banner-travel-tour-768x600.png" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/img-merged.png" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/Slide2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/renault.png" alt="">
+                    </div>
+                    
+                </div>
+            </section>
+            <div class="work section" id="hobbies">
+                <h2 class="section-title">Sports</h2>
+                <div class="work__container bd-grid">
+            <div class="work__img">
+                <img src="assets/img/taekwondo.jpg" alt="">
+            </div>
+            <div class="work__img">
+                
+                <img src="assets/img/surf.jpg" alt="">
+            </div>
+            
+            
+            </div>  
+            
+
+            
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Envoyer" class="contact__button button">
+                    </form>
+                </div>
+                <div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Contactez-moi</h3>
+                    <span class="contact__text">06 59 60 87 45</span>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">E-mail</h3>
+                    <span class="contact__text">Breem92230@gmail.com</span>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Adressse</h3>
+                    <span class="contact__text">3 avenue Claude Debussy
+                                                92230 Gennevilliers</span>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+        
+        <footer class="footer">
+            <p class="footer__title">Brahim</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/brahimabid/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
